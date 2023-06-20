@@ -10,12 +10,8 @@ Write("Введите целое число: ");
 int n = int.Parse(ReadLine()!);
 WriteLine(RecursionN(n));
 string RecursionN(int n){
-
     if(n==1)
         return "1";
-
     string s = n.ToString() + ", " + RecursionN(n-1)  ;
-
     return s;
 }
-
